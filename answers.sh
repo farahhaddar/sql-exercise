@@ -53,3 +53,22 @@ INNER JOIN companies ON employees.Company = companies.name )
 WHERE employees.Role='Graphic Designer';
 
 
+COUNT AND FILTER:
+1-SELECT MAX(points),name
+FROM students;
+
+2-SELECT AVG(Points)
+FROM students;
+
+3-SELECT COUNT(Points)
+FROM students
+WHERE points=500;
+
+4-SELECT name
+FROM students
+WHERE name LIKE '%s%';
+
+5-SELECT name, points
+FROM students 
+ORDER BY points DESC;
+
